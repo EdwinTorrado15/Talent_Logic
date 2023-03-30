@@ -1,0 +1,154 @@
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-section-information {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-section-img {
+  background-image: url("https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=360&q=80");
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  max-width: 400px;
+  text-align: start;
+}
+
+.cargo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 100px;
+  color: white;
+  background: #9ad1d4;
+  margin-left: 5px;
+}
+
+.descripcion {
+  margin-top: 10px;
+  max-width: 400px;
+}
+
+.descripcion-anios {
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  gap: 0;
+  max-width: 300px;
+  margin-top: 10px;
+}
+
+.btn-about {
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  background: #ff5400;
+  color: white;
+}
+
+.btn-projects {
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.container-stats {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: max-content;
+}
+
+.second-sections-stats {
+  display: flex;
+}
+
+.stats {
+  width: 200px;
+  padding: 10px;
+}
+
+.stats p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+
+.stats span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+}
+
+.first-section-footer p {
+  width: 200px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.first-section-footer button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  background-color: #ffc300;
+}
+
+.second-section-footer {
+  width: 300px;
+}
+
+.section {
+  color: white;
+  display: flex;
+  padding: 10px 0px;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+.section p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.section span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}

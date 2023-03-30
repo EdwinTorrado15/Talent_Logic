@@ -162,7 +162,7 @@
 /* NBA section */
 .nba-container {
   padding: 15px;
-  max-height: 550px;
+  height: 100vh;
   overflow-y: scroll;
 }
 
