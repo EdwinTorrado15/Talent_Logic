@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Encode Sans Condensed", sans-serif;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+}
+
+.carrito {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

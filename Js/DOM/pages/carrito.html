@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Carrito</title>
+  </head>
+  <body>
+    <nav
+      class="px-5 py-3 flex justify-between items-center border border-b-gray-200"
+    >
+      <div>
+        <img
+          src="https://www.dc.com/img/dc-logo.svg"
+          alt="DC Logo"
+          width="40px"
+        />
+      </div>
+      <div>
+        <ul class="flex items-center gap-3">
+          <li>
+            <a href="../index.html" class="font-semibold hover:text-azul"
+              >Inicio</a
+            >
+          </li>
+          <li>
+            <a href="./videojuegos.html" class="font-semibold hover:text-azul"
+              >Videojuegos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <a href="./carrito.html" id="carrito">
+        <i class="bi bi-cart-fill cursor-pointer hover:text-azul"></i>
+      </a>
+    </nav>
+    <div class="h-screen">
+      <h1 class="text-3xl font-semibold my-4 text-center">
+        Carrito de productos
+      </h1>
+      <!-- Data table -->
+      <div id="table-carrito"></div>
+    </div>
+
+    <script type="module" src="../js/carrito.js"></script>
+  </body>
+</html>
