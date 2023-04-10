@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Encode Sans Condensed", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+}
+
+.status {
+  width: 25%;
+  background-color: #f3f3f3;
+  position: relative;
+  padding: 60px 1rem 0.5rem;
+}
+
+.status:nth-child(even) {
+  background-color: #e9e9e96b;
+}
+
+.status h1 {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: #343434;
+  color: #f3f3f3;
+  margin: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+#add_btn {
+  padding: 0.5rem 1rem;
+  background-color: #03045e;
+  color: #fff;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#add_btn:hover {
+  background-color: #023e8a;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px,
+    rgba(15, 15, 15, 0.1) 0px 2px 4px;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.todo .close {
+  position: absolute;
+  right: 1rem;
+  top: 0rem;
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.todo .close:hover {
+  color: #d90429;
+}
+
+.todo .title {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.todo .description {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.todo .due-date {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+/* modal */
+
+.close-modal {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: #d90429;
+}
+
+.modal {
+  width: 450px;
+  position: fixed;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 0.3s ease-in-out;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.modal.active {
+  top: 50%;
+}
+
+.modal .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.modal .body {
+  padding: 0.75rem;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#overlay.active {
+  display: block;
+}
+
+#todo_name_input,
+#todo_description_input,
+#todo_due_date_input,
+#edit_todo_name_input,
+#edit_todo_description_input,
+#edit_todo_due_date_input,
+#edit_todo_submit,
+.edit,
+#todo_submit {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin: 0.25rem;
+}
+
+#todo_submit,
+.edit,
+#edit_todo_submit {
+  background-color: #03045e;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+}
+
+.edit:hover{
+  background-color: #023e8a;
+}
+
+#todo_submit:hover, .edit:hover {
+  background-color: #023e8a;
+}
+
+@media only screen and (max-width: 767px) {
+  .todo-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  .status {
+    width: 25%;
+    min-width: 300px;
+  }
+
+  .modal{
+    width: 90%;
+  }
+}

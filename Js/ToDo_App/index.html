@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <!-- modal agregar-->
+    <div class="modal" id="todo_form">
+      <div class="header">
+        <div class="title">Agregar Todo</div>
+        <button class="btn close-modal">&times;</button>
+      </div>
+      <div class="body">
+        <label>Nombre</label>
+        <input type="text" id="todo_name_input" placeholder="Nombre" />
+        <label>Descripcion</label>
+        <input
+          type="text"
+          id="todo_description_input"
+          placeholder="Descripcion"
+        />
+        <label>Fecha vencimiento</label>
+        <input type="text" id="todo_due_date_input" placeholder="Fecha" />
+        <input type="submit" value="Agregar Todo" id="todo_submit" />
+      </div>
+    </div>
+
+    <!-- Modal editar -->
+    <div id="edit_todo_form" class="modal">
+      <div class="header">
+        <div class="title">Editar Todo</div>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="body">
+        <label>Nombre</label>
+        <input type="text" id="edit_todo_name_input" placeholder="Nombre" />
+        <label>Descripcion</label>
+        <input id="edit_todo_description_input" placeholder="Descripcion" />
+        <label>Fecha vencimiento</label>
+        <input type="text" id="edit_todo_due_date_input" placeholder="Fecha" />
+        <button id="edit_todo_submit" type="submit">Guardar</button>
+      </div>
+    </div>
+
+    <!-- todo -->
+    <div class="todo-container">
+      <div class="status" id="no_status">
+        <h1>Creadas</h1>
+        <button id="add_btn" data-target-modal="#todo_form">
+          + Agregar Todo
+        </button>
+      </div>
+      <div class="status">
+        <h1>Pendientes</h1>
+      </div>
+      <div class="status">
+        <h1>En progreso</h1>
+      </div>
+      <div class="status">
+        <h1>Completadas</h1>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
