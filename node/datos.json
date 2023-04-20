@@ -1,0 +1,22 @@
+{
+  "nombre": "Juan",
+  "apellido": "Pérez",
+  "edad": 35,
+  "email": "juan.perez@example.com",
+  "direccion": {
+    "calle": "Calle Falsa",
+    "numero": 123,
+    "ciudad": "Springfield",
+    "estado": "Estados Unidos"
+  },
+  "telefonos": [
+    {
+      "tipo": "celular",
+      "numero": "555-1234"
+    },
+    {
+      "tipo": "trabajo",
+      "numero": "555-5678"
+    }
+  ]
+}
