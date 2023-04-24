@@ -22,7 +22,7 @@ function App() {
           Buscador de video juegos
         </h1>
         <input
-          className="w-96 rounded-md p-3 border-2 outline-blue-500"
+          className="w-full rounded-md p-3 border-2 outline-blue-500"
           type="text"
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Buscar..."
