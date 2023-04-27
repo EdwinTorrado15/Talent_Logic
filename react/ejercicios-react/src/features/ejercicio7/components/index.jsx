@@ -1,0 +1,1 @@
+export {default as Fecha} from "./Fecha";
