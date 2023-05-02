@@ -1,0 +1,1 @@
+export {default as Ejercicio13} from './Ejercicio13'

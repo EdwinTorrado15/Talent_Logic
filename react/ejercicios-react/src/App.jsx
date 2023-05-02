@@ -12,6 +12,7 @@ import { Ejercicio9 } from "@/features/ejercicio9/pages";
 import { Ejercicio10 } from "@/features/ejercicio10/pages";
 import { Ejercicio11, PerfilUsuario } from "@/features/ejercicio11/pages";
 import { Ejercicio12, ShowCarrito } from "@/features/ejercicio12/pages";
+import { Ejercicio13 } from "@/features/ejercicio13/pages";
 import { CarritoProvider } from "@/features/ejercicio12/context/CarritoContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -53,6 +54,7 @@ function App() {
             </CarritoProvider>
           }
         />
+        <Route path="/ejercicio13" element={<Ejercicio13 />} />
       </Routes>
     </div>
   );
