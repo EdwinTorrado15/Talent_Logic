@@ -11,10 +11,15 @@ import { Ejercicio8 } from "@/features/ejercicio8/pages";
 import { Ejercicio9 } from "@/features/ejercicio9/pages";
 import { Ejercicio10 } from "@/features/ejercicio10/pages";
 import { Ejercicio11, PerfilUsuario } from "@/features/ejercicio11/pages";
+import { Ejercicio12, ShowCarrito } from "@/features/ejercicio12/pages";
+import { CarritoProvider } from "@/features/ejercicio12/context/CarritoContext";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <div>
+      <ToastContainer hideProgressBar theme="colored" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ejercicio1" element={<Ejercicio1 />} />
@@ -31,6 +36,22 @@ function App() {
         <Route
           path="/ejercicio11/perfil/:nombreId"
           element={<PerfilUsuario />}
+        />
+        <Route
+          path="/ejercicio12"
+          element={
+            <CarritoProvider>
+              <Ejercicio12 />
+            </CarritoProvider>
+          }
+        />
+        <Route
+          path="/ejercicio12/show-carrito"
+          element={
+            <CarritoProvider>
+              <ShowCarrito />
+            </CarritoProvider>
+          }
         />
       </Routes>
     </div>
