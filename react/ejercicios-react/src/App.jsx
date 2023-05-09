@@ -15,6 +15,8 @@ import { Ejercicio12, ShowCarrito } from "@/features/ejercicio12/pages";
 import { Ejercicio13 } from "@/features/ejercicio13/pages";
 import { Ejercicio14 } from "@/features/ejercicio14/pages";
 import { Ejercicio15, InfoPais } from "@/features/ejercicio15/pages";
+import { Ejercicio16 } from "@/features/ejercicio16/pages";
+import { Ejercicio17, Pelicula } from "@/features/ejercicio17/pages";
 import { CarritoProvider } from "@/features/ejercicio12/context/CarritoContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -60,6 +62,9 @@ function App() {
         <Route path="/ejercicio14" element={<Ejercicio14 />} />
         <Route path="/ejercicio15" element={<Ejercicio15 />} />
         <Route path="/pais/:nombre" element={<InfoPais />} />
+        <Route path="/ejercicio16" element={<Ejercicio16 />} />
+        <Route path="/ejercicio17" element={<Ejercicio17 />} />
+        <Route path="/pelicula/:nombre" element={<Pelicula />} />
       </Routes>
     </div>
   );

@@ -77,6 +77,16 @@ const linksPages = [
     name: "Ejercicio 15",
     path: "/ejercicio15",
   },
+  {
+    id: 16,
+    name: "Ejercicio 16",
+    path: "/ejercicio16",
+  },
+  {
+    id: 17,
+    name: "Ejercicio 17",
+    path: "/ejercicio17",
+  },
 ];
 
 const Home = () => {
