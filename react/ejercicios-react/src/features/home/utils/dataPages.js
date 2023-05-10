@@ -65,23 +65,28 @@ export const linksPages = [
     path: "/ejercicio13",
   },
   {
-    id: 15,
+    id: 14,
     name: "Ejercicio 14",
     path: "/ejercicio14",
   },
   {
-    id: 16,
+    id: 15,
     name: "Ejercicio 15",
     path: "/ejercicio15",
   },
   {
-    id: 17,
+    id: 16,
     name: "Ejercicio 16",
     path: "/ejercicio16",
   },
   {
-    id: 18,
+    id: 17,
     name: "Ejercicio 17",
     path: "/ejercicio17",
+  },
+  {
+    id: 18,
+    name: "Ejercicio 18",
+    path: "/ejercicio18",
   },
 ];
