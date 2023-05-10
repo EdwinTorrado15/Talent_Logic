@@ -88,7 +88,7 @@ const noticias = [
   },
 ];
 
-const Ejercicio16 = () => {
+const Ejercicio15 = () => {
   const [search, setSearch] = useState("");
   const [fecha, setFecha] = useState("");
   const [categoria, setCategoria] = useState("");
@@ -111,7 +111,7 @@ const Ejercicio16 = () => {
 
   return (
     <div>
-      <Header titulo="Ejercicio 16" />
+      <Header titulo="Ejercicio 15" />
       <div className="flex  justify-center items-center gap-4">
         <input
           value={search}
@@ -145,4 +145,4 @@ const Ejercicio16 = () => {
   );
 };
 
-export default Ejercicio16;
+export default Ejercicio15;

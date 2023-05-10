@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { CardCountrie } from "@/features/ejercicio15/components";
 import axios from "axios";
 
-const Ejercicio15 = () => {
+const Ejercicio14 = () => {
   const [countries, setCountries] = useState([]);
   const [filteredCountries, setFilteredCountries] = useState([]);
   const [searchCountry, setSearchCountry] = useState("");
@@ -51,4 +51,4 @@ const Ejercicio15 = () => {
   );
 };
 
-export default Ejercicio15;
+export default Ejercicio14;
