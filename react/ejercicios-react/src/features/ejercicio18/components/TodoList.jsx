@@ -29,8 +29,6 @@ const TodoList = () => {
     getTodos();
   }
 
-  console.log("dataTodos ->", dataTodo);
-
   return (
     <div className="flex flex-col justify-center">
       <Link to="/add">

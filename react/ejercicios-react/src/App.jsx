@@ -17,8 +17,10 @@ import { Ejercicio14, InfoPais } from "@/features/ejercicio15/pages";
 import { Ejercicio15 } from "@/features/ejercicio16/pages";
 import { Ejercicio16, Pelicula } from "@/features/ejercicio17/pages";
 import { Ejercicio17 } from "@/features/ejercicio18/pages";
-import { Ejercicio18 } from "@/features/ejercicios18/pages";
 import { FormTodo } from "@/features/ejercicio18/components";
+import { Ejercicio18 } from "@/features/ejercicios18/pages";
+import { Ejercicio19 } from "@/features/ejercicio19/pages";
+import { FormProfile } from "@/features/ejercicio19/components";
 import { CarritoProvider } from "@/features/ejercicio12/context/CarritoContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -70,6 +72,9 @@ function App() {
         <Route path="/add" element={<FormTodo />} />
         <Route path="/edit/:id" element={<FormTodo />} />
         <Route path="/ejercicio18" element={<Ejercicio18 />} />
+        <Route path="/ejercicio19" element={<Ejercicio19 />} />
+        <Route path="/add-profile" element={<FormProfile />} />
+        <Route path="/edit-profile/:id" element={<FormProfile />} />
       </Routes>
     </div>
   );
