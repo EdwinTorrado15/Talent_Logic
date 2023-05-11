@@ -107,8 +107,6 @@ const Ejercicio15 = () => {
   const categories = noticias.map((noticia) => noticia.categoria);
   const uniqueCategories = Array.from(new Set(categories));
 
-  console.log(uniqueCategories)
-
   return (
     <div>
       <Header titulo="Ejercicio 15" />

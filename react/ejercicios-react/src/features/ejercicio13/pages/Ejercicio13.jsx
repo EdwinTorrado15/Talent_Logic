@@ -71,6 +71,9 @@ const Ejercicio13 = () => {
 
     const [books, setBooks] = useState(booksData);
 
+    const getUser = () => {}
+
+    getUser();
   return (
     <div className="bg-gray-100">
       <Header titulo="Ejercicio 13" />

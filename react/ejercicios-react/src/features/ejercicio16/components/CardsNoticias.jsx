@@ -1,7 +1,4 @@
-import React from "react";
-
 const CardsNoticias = ({ noticias }) => {
-  console.log(noticias);
 
   return (
     <div className="flex flex-wrap justify-center items-center">
