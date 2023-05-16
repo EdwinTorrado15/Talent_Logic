@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const TodoList = () => {
   const [dataTodo, setDataTodo] = useState([]);
+  const [draggedTodo, setDraggedTodo] = useState(null);
 
   const getTodos = () => {
     const todos = JSON.parse(localStorage.getItem("todos") || "[]");
@@ -27,7 +28,7 @@ const TodoList = () => {
     todos.splice(index, 1);
     localStorage.setItem("todos", JSON.stringify(todos));
     getTodos();
-  }
+  };
 
   return (
     <div className="flex flex-col justify-center">
@@ -40,6 +41,26 @@ const TodoList = () => {
         <div
           className="bg-gray-900 px-20 py-5 text-white shadow-2xl mb-4 flex justify-between"
           key={todo.id}
+          draggable="true"
+          onDragStart={(e) => {
+            setDraggedTodo(todo);
+            e.dataTransfer.effectAllowed = "move";
+          }}
+          onDragOver={(e) => e.preventDefault()}
+          onDrop={(e) => {
+            e.preventDefault();
+            const todos = [...dataTodo];
+            const draggedIndex = todos.findIndex(
+              (t) => t.id === draggedTodo.id
+            );
+            const targetIndex = todos.findIndex((t) => t.id === todo.id);
+            [todos[draggedIndex], todos[targetIndex]] = [
+              todos[targetIndex],
+              todos[draggedIndex],
+            ];
+            localStorage.setItem("todos", JSON.stringify(todos));
+            setDataTodo(todos);
+          }}
         >
           <div className="text-left">
             <h1 className="text-2xl uppercase">{todo.title}</h1>

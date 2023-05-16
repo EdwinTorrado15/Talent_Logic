@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Header } from "@/components";
 import { CardsNoticias } from "@/features/ejercicio16/components";
+/* import {noticas} from ".." */
 
 const noticias = [
   {
