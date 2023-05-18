@@ -22,6 +22,7 @@ import { Ejercicio18 } from "@/features/ejercicios18/pages";
 import { Ejercicio19 } from "@/features/ejercicio19/pages";
 import { Ejercicio20 } from "@/features/ejercicio20/pages";
 import { Ejercicio23 } from "@/features/ejercicio23/pages";
+import { Ejercicio25 } from "@/features/ejercicio25/pages";
 import { FormProfile } from "@/features/ejercicio19/components";
 import { CarritoProvider } from "@/features/ejercicio12/context/CarritoContext";
 import { ToastContainer } from "react-toastify";
@@ -79,6 +80,7 @@ function App() {
         <Route path="/edit-profile/:id" element={<FormProfile />} />
         <Route path="/ejercicio20" element={<Ejercicio20 />} />
         <Route path="/ejercicio23" element={<Ejercicio23 />} />
+        <Route path="/ejercicio25" element={<Ejercicio25 />} />
       </Routes>
     </div>
   );
