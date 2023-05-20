@@ -114,4 +114,9 @@ export const linksPages = [
     name: "Ejercicio 25",
     path: "/ejercicio25",
   },
+  {
+    id: 26,
+    name: "Ejercicio 26",
+    path: "/ejercicio12",
+  },
 ];
