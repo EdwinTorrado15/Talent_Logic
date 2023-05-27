@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 import { Home } from "@/features/home";
 import { Ejercicio1 } from "@/features/ejercicio1/pages";
 import { Ejercicio2 } from "@/features/ejercicio2/pages";
@@ -88,7 +90,14 @@ function App() {
         <Route path="/ejercicio27" element={<Ejercicio27 />} />
         <Route path="/ejercicio28/*" element={<Ejercicio28 />} />
         <Route path="/ejercicio30" element={<Ejercicio30 />} />
-        <Route path="/ejercicio31" element={<Ejercicio31 />} />
+        <Route
+          path="/ejercicio31"
+          element={
+            <DndProvider backend={HTML5Backend}>
+              <Ejercicio31 />
+            </DndProvider>
+          }
+        />
       </Routes>
     </div>
   );
