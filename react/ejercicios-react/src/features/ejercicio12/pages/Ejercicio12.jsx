@@ -45,8 +45,7 @@ let productos = [
 ];
 
 const Ejercicio12 = () => {
-
-  const {carrito} = useContext(CarritoContext);
+  const { carrito } = useContext(CarritoContext);
 
   return (
     <div>
@@ -59,9 +58,7 @@ const Ejercicio12 = () => {
           </span>
         </Link>
       </div>
-      <TableProductos
-        productos={productos}
-      />
+      <TableProductos productos={productos} />
     </div>
   );
 };

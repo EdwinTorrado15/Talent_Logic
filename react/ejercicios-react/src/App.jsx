@@ -29,6 +29,7 @@ import { Ejercicio27 } from "@/features/ejercicio27/pages";
 import { Ejercicio28 } from "@/features/ejercicio28/pages";
 import { Ejercicio30 } from "@/features/ejercicio30/pages";
 import { Ejercicio31 } from "@/features/ejercicio31/pages";
+import { Carrito, Ejercicio32, Productos } from "@/features/ejercicio32/pages";
 import { FormProfile } from "@/features/ejercicio19/components";
 import { CarritoProvider } from "@/features/ejercicio12/context/CarritoContext";
 import { ToastContainer } from "react-toastify";
@@ -96,6 +97,30 @@ function App() {
             <DndProvider backend={HTML5Backend}>
               <Ejercicio31 />
             </DndProvider>
+          }
+        />
+        <Route
+          path="/ejercicio32"
+          element={
+            <CarritoProvider>
+              <Ejercicio32 />
+            </CarritoProvider>
+          }
+        />
+        <Route
+          path="/ejercicio32/productos"
+          element={
+            <CarritoProvider>
+              <Productos />
+            </CarritoProvider>
+          }
+        />
+        <Route
+          path="/ejercicio32/carrito"
+          element={
+            <CarritoProvider>
+              <Carrito />
+            </CarritoProvider>
           }
         />
       </Routes>
